@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <title>Data Science (IFSC)</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  
+  <div class="d-flex" id="wrapper">
+    
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      
+      
+      <div class="sidebar-heading text-center">                  
+        <img class="w-75 nav-brand" src="https://www.ifsc.edu.br/image/layout_set_logo?img_id=902745&t=1568216961625">           
+      </div>
+      
+      <div class="sidebar-heading">Conteúdo</div>
+      
+      <div class="list-group list-group-flush">
+        
+        <a href="aula01/introducao_disciplina.slides.html" class="menu_item" data-toggle="collapse" data-target="#submenu_repeticao">Introdução Disciplina</a>        
+
+        <a href="aula02/introducao_aprendizado.slides.html" class="menu_item" data-toggle="collapse" data-target="#submenu_decisao">Introdução</a>
+        <div class="collapse" id="submenu_decisao" aria-expanded="false">
+          <ul class="flex-column pl-2 nav">
+            <li><a class="menu_subitem" href="aula02/introducao_aprendizado.slides.html">Aprendizado de Máquina</a></li>
+            <li><a class="menu_subitem" href="aula03/visualizacao_dados.slides.html">Visualização de Dados</a></li>            
+          </ul>
+        </div>
+        
+        <a href="#" class="menu_item" data-toggle="collapse" data-target="#submenu_modularizacao">Text Mining</a>
+        <div class="collapse" id="submenu_modularizacao" aria-expanded="false">
+          <ul class="flex-column pl-2 nav">
+            <li><a class="menu_subitem" href="aula04/preprocessamento_de_textos.slides.html">Pré-processamento</a></li>            
+			<li><a class="menu_subitem" href="#">Representação</a></li>            
+			<li><a class="menu_subitem" href="#">Modelos Preditivos</a></li>            
+          </ul>
+        </div>       
+
+        <a href="#" class="menu_item" data-toggle="collapse" data-target="#submenu_modularizacao">Aplicações em Redes Neurais</a>
+        <div class="collapse" id="submenu_modularizacao" aria-expanded="false">
+          <ul class="flex-column pl-2 nav">
+            <li><a class="menu_subitem" href="#">Construção de Redes Neurais</a></li>            
+			<li><a class="menu_subitem" href="#">Análise de Imagens</a></li>            
+			<li><a class="menu_subitem" href="#">Análise de Dados Sequenciais</a></li>            
+			<li><a class="menu_subitem" href="#">Análise de Dados Textuais</a></li>            
+          </ul>
+        </div>    
+        
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+        <div></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <!--
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>              
+              </li>
+            </ul>
+          -->
+        </div>
+      </nav>
+      
+      <div class="embed-responsive" style="height: 90%;">
+        <iframe id="frame" class="embed-responsive-item" src=""></iframe>        
+      </div>
+      
+      <!-- /#page-content-wrapper -->
+      
+      
+    </div>
+    <!-- /#page-content-wrapper -->
+    
+  </div>
+  <!-- /#wrapper -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <!-- Menu Toggle Script -->
+  <script>
+    
+    
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    
+    $(".menu_item").attr('class', 'list-group-item list-group-item-action bg-light mylink');
+    
+    $(".menu_subitem").attr('class', 'mylink nav-link py-1');    
+    
+    $(".mylink").click(function(e) {
+      e.preventDefault();
+      console.log(this.href);
+      $('#frame').attr('src', this.href);
+    });
+    
+  </script>
+  
+</body>
+
+</html>
