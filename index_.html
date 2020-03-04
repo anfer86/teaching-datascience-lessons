@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  
-  <title>Data Science (IFSC)</title>
-  
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-  <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+<head
 
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Data Science (IFSC)</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link href="css/simple-sidebar.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -34,37 +33,35 @@
       <div class="sidebar-heading">Conteúdo</div>
       
       <div class="list-group list-group-flush">
-        <!--
-          <a href="#" class="menu_item">Dashboard</a>
-          <a href="#" class="menu_item">Shortcuts</a>
-        -->        
-        <a href="javascript:;" class="menu_item" data-toggle="collapse" data-target="#submenu_variaveis">Introdução</a>
-        <div class="collapse" id="submenu_variaveis" aria-expanded="false">
-          <ul class="flex-column pl-2 nav">
-            <!-- <li><a class="menu_subitem" href="#">Entrada e saída de dados</a></li> -->
-            <li><a class="menu_subitem" href="aula02/introducao_aprendizado.slides.html">Conceitos de Aprendizado de Máquina</a></li>
-            <li><a class="menu_subitem" href="aula03/visualizacao_dados.slides.html">Visualização de Dados</a></li>
-          </ul>
-        </div>        
         
-        <a href="javascript:;" class="menu_item" data-toggle="collapse" data-target="#submenu_expressoes">Análise de Dados Textuais</a>
-        <div class="collapse" id="submenu_expressoes" aria-expanded="false">
-          <ul class="flex-column pl-2 nav">            
-            <li><a class="menu_subitem" href="javascript:;">Processamento de Linguagem Natural</a></li>
-            <li><a class="menu_subitem" href="javascript:;">Representação de Textos</a></li>
-            <li><a class="menu_subitem" href="javascript:;">Modelos para Classificação de Textos</a></li>            
+        <a href="aula01/introducao_disciplina.slides.html" class="menu_item" data-toggle="collapse" data-target="#submenu_repeticao">Introdução Disciplina</a>        
+        
+        <a href="aula02/introducao_aprendizado.slides.html" class="menu_item" data-toggle="collapse" data-target="#submenu_decisao">Introdução</a>
+        <div class="collapse" id="submenu_decisao" aria-expanded="false">
+          <ul class="flex-column pl-2 nav">
+            <li><a class="menu_subitem" href="aula02/introducao_aprendizado.slides.html">Aprendizado de Máquina</a></li>
+            <li><a class="menu_subitem" href="aula03/visualizacao_dados.slides.html">Visualização de Dados</a></li>            
           </ul>
         </div>
-
-        <a href="javascript:;" class="menu_item" data-toggle="collapse" data-target="#submenu_expressoes">Aplicações em Redes Neurais</a>
-        <div class="collapse" id="submenu_expressoes" aria-expanded="false">
-          <ul class="flex-column pl-2 nav">            
-            <li><a class="menu_subitem" href="javascript:;">Construção de Redes Neurais</a></li>
-            <li><a class="menu_subitem" href="javascript:;">Análise de Imagens</a></li>
-            <li><a class="menu_subitem" href="javascript:;">Análise de Dados Sequenciais</a></li>            
-            <li><a class="menu_subitem" href="javascript:;">Análise de Textos</a></li>            
+        
+        <a href="#" class="menu_item" data-toggle="collapse" data-target="#submenu_modularizacao">Text Mining</a>
+        <div class="collapse" id="submenu_modularizacao" aria-expanded="false">
+          <ul class="flex-column pl-2 nav">
+            <li><a class="menu_subitem" href="aula04/preprocessamento_de_textos.slides.html">Pré-processamento</a></li>            
+            <li><a class="menu_subitem" href="#">Representação</a></li>            
+            <li><a class="menu_subitem" href="#">Modelos Preditivos</a></li>            
           </ul>
-        </div>
+        </div>       
+        
+        <a href="#" class="menu_item" data-toggle="collapse" data-target="#submenu_modularizacao">Aplicações em Redes Neurais</a>
+        <div class="collapse" id="submenu_modularizacao" aria-expanded="false">
+          <ul class="flex-column pl-2 nav">
+            <li><a class="menu_subitem" href="#">Construção de Redes Neurais</a></li>            
+            <li><a class="menu_subitem" href="#">Análise de Imagens</a></li>            
+            <li><a class="menu_subitem" href="#">Análise de Dados Sequenciais</a></li>            
+            <li><a class="menu_subitem" href="#">Análise de Dados Textuais</a></li>            
+          </ul>
+        </div>    
         
       </div>
     </div>
@@ -75,7 +72,7 @@
       
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="btn" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
-        <div>Tópicos Especiais em Inteligência Artificial</div>
+        <div></div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -146,8 +143,5 @@
   </script>
   
 </body>
-
-<script src="jquery-3.4.1.min.js"></script>
-<script src="jquery_preventDefault.js"></script>  
 
 </html>

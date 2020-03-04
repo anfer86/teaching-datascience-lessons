@@ -20,6 +20,7 @@ body {
   padding: 0.875rem 1.25rem;
   font-size: 1.0rem;
   width: 15rem;
+  font-weight: bold;
 }
 
 #sidebar-wrapper {
