@@ -13136,7 +13136,8 @@ ul.typeahead-list  > li > a.pull-right {
   font-size: 2em;
 }
 .reveal .slides {
-  text-align: left;
+  text-align: left;  
+  width : 20px;
 }
 .reveal.fade {
   opacity: 1;
@@ -13338,7 +13339,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Transforma&#231;&#227;o-de-um-Conjunto-de-Senten&#231;as-em-uma-Tabela-Atributo-Valor">Transforma&#231;&#227;o de um Conjunto de Senten&#231;as em uma Tabela Atributo-Valor<a class="anchor-link" href="#Transforma&#231;&#227;o-de-um-Conjunto-de-Senten&#231;as-em-uma-Tabela-Atributo-Valor">&#182;</a></h2>
+<h3 id="Transforma&#231;&#227;o-de-um-Conjunto-de-Senten&#231;as-em-uma-Tabela-Atributo-Valor">Transforma&#231;&#227;o de um Conjunto de Senten&#231;as em uma Tabela Atributo-Valor<a class="anchor-link" href="#Transforma&#231;&#227;o-de-um-Conjunto-de-Senten&#231;as-em-uma-Tabela-Atributo-Valor">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13484,7 +13485,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13502,7 +13503,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[75]:</div>
+    <div class="prompt output_prompt">Out[40]:</div>
 
 
 
@@ -13576,7 +13577,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data5</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -13593,7 +13594,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[76]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -13668,7 +13669,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">CountVectorizer</span>
@@ -13691,7 +13692,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">countVectorizer</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data5</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span>
@@ -13707,7 +13708,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[78]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -13751,7 +13752,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">countVectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span> <span class="p">)</span>
@@ -13798,7 +13799,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">countVectorizer</span><span class="o">.</span><span class="n">vocabulary_</span>
@@ -13814,7 +13815,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[80]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -13914,7 +13915,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data5_vectorized</span> <span class="o">=</span> <span class="n">countVectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">data5</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span>
@@ -13931,7 +13932,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[81]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
@@ -13957,7 +13958,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data5_vectorized</span><span class="o">.</span><span class="n">todense</span><span class="p">()</span>
@@ -13973,7 +13974,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[82]:</div>
+    <div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -14017,7 +14018,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">data5_vectorized</span><span class="o">.</span><span class="n">todense</span><span class="p">(),</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">countVectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">())</span>
@@ -14030,7 +14031,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tf</span>
@@ -14046,7 +14047,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[84]:</div>
+    <div class="prompt output_prompt">Out[49]:</div>
 
 
 
@@ -14235,7 +14236,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
@@ -14280,7 +14281,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tf</span><span class="p">[</span><span class="s1">&#39;class_label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data5</span><span class="o">.</span><span class="n">Label</span>
@@ -14293,7 +14294,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tf</span>
@@ -14309,7 +14310,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[87]:</div>
+    <div class="prompt output_prompt">Out[52]:</div>
 
 
 
@@ -14491,13 +14492,13 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Pr&#233;-processando-a-Senten&#231;a-com-CountVectorizer">Pr&#233;-processando a Senten&#231;a com CountVectorizer<a class="anchor-link" href="#Pr&#233;-processando-a-Senten&#231;a-com-CountVectorizer">&#182;</a></h3>
+<h4 id="Pr&#233;-processando-a-Senten&#231;a-com-CountVectorizer">Pr&#233;-processando a Senten&#231;a com CountVectorizer<a class="anchor-link" href="#Pr&#233;-processando-a-Senten&#231;a-com-CountVectorizer">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">inspect</span>
@@ -14546,7 +14547,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[300]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">countVectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
@@ -14585,7 +14586,7 @@ Número de termos com pré-processar:  50
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tf_pre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
@@ -14606,7 +14607,7 @@ Número de termos com pré-processar:  50
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[90]:</div>
+    <div class="prompt output_prompt">Out[55]:</div>
 
 
 
@@ -14788,6 +14789,287 @@ Número de termos com pré-processar:  50
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="N-Grams">N-Grams<a class="anchor-link" href="#N-Grams">&#182;</a></h3><ul>
+<li>Suponha as seguintes frases:<ul>
+<li><strong>Frase 1</strong>: 'I hate comedian films, but I like this film' (classe Positiva)</li>
+<li><strong>Frase 2</strong>: 'I like comedian films, but I hate this film' (classe Negativa)</li>
+</ul>
+</li>
+<li>Ao analisar as seguintes frases observamos que ambas possuem os mesmos termos, no entanto são claramente de classes diferentes.</li>
+<li>Devem ter observado que ao analisar a importância de cada palavra em relação à classe ou mesmo usar uma tabela atributo valor, não se tem mais ideia da ordem das palavras (apenas a presença/ausência, contagem ou importância), de cada termo no texto. Dessa forma, pela tabela atributo valor não haveria diferença entre a <strong>Frase 1</strong> e a <strong>Frase 2</strong>.</li>
+<li>O conceito de <em>N-gramas</em> é o considerar uma sequência de palavras como um atributo.</li>
+<li>Com <em>n-gramas</em> podemos analisar:<ul>
+<li>Os bi-gramas 'hate comedian' e 'like comedian'</li>
+<li>Os tri-gramas 'like this film' e 'hate this film'</li>
+<li>Isso pode trazer benefícios na análise mais completa das frases</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Exemplo de Implementação</strong></p>
+<p>Vamos considerar n-gramas de tamanho 1 a 3, ou seja unigramas, bigramas e trigramas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">countVectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
+<span class="n">countVectorizer_ngrams</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span> <span class="n">ngram_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="n">countVectorizer</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data5</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span>
+<span class="n">countVectorizer_ngrams</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data5</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Número de atributos sem n-gramas: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">countVectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">())</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Número de atributos com n-gramas (1,3): &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">countVectorizer_ngrams</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">())</span> <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Número de atributos sem n-gramas:  68
+Número de atributos com n-gramas (1,3):  225
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Tabela no formato atributo-valor usando n-gramas</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tf_ngrams</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">countVectorizer_ngrams</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">data5</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">(),</span> 
+    <span class="n">columns</span> <span class="o">=</span> <span class="n">countVectorizer_ngrams</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="n">df_tf_ngrams</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[57]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>about</th>
+      <th>about distressed</th>
+      <th>about distressed drifting</th>
+      <th>acting</th>
+      <th>acting was</th>
+      <th>acting was poor</th>
+      <th>aimless</th>
+      <th>aimless movie</th>
+      <th>aimless movie about</th>
+      <th>almost</th>
+      <th>...</th>
+      <th>who was</th>
+      <th>who was more</th>
+      <th>whom</th>
+      <th>whom walked</th>
+      <th>whom walked out</th>
+      <th>with</th>
+      <th>with black</th>
+      <th>with black white</th>
+      <th>young</th>
+      <th>young man</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 225 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Representa&#231;&#227;o-Bin&#225;ria">Representa&#231;&#227;o Bin&#225;ria<a class="anchor-link" href="#Representa&#231;&#227;o-Bin&#225;ria">&#182;</a></h3><p>Nesta representação contabilizamos o número de vezes que cada palavra aparece em cada sentença, como segue:</p>
 <table>
 <thead><tr>
@@ -14849,7 +15131,7 @@ Número de termos com pré-processar:  50
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">countVectorizer_bin</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">binary</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
@@ -14862,7 +15144,7 @@ Número de termos com pré-processar:  50
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">countVectorizer_bin</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data5</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span>
@@ -14878,7 +15160,7 @@ Número de termos com pré-processar:  50
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[92]:</div>
+    <div class="prompt output_prompt">Out[59]:</div>
 
 
 
@@ -14908,12 +15190,12 @@ Número de termos com pré-processar:  50
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_bin</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">countVectorizer_bin</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">data5</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span><span class="o">.</span><span class="n">todense</span><span class="p">(),</span> 
-    <span class="n">columns</span> <span class="o">=</span> <span class="n">countVectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
+    <span class="n">columns</span> <span class="o">=</span> <span class="n">countVectorizer_bin</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
 <span class="p">)</span>
 <span class="n">df_bin</span>
 </pre></div>
@@ -14928,7 +15210,7 @@ Número de termos com pré-processar:  50
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[93]:</div>
+    <div class="prompt output_prompt">Out[60]:</div>
 
 
 
@@ -15117,7 +15399,7 @@ Número de termos com pré-processar:  50
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span>
@@ -15161,7 +15443,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
@@ -15180,7 +15462,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[95]:</div>
+    <div class="prompt output_prompt">Out[62]:</div>
 
 
 
@@ -15265,7 +15547,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
@@ -15284,7 +15566,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[96]:</div>
+    <div class="prompt output_prompt">Out[63]:</div>
 
 
 
@@ -15370,7 +15652,7 @@ Attempting artiness with black & white <b>and</b> clever camera angles, the movi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Representa&#231;&#227;o-Term-Frequency---Inverse-Document-Frequency-(TF-IDF)">Representa&#231;&#227;o Term Frequency - Inverse Document Frequency (TF-IDF)<a class="anchor-link" href="#Representa&#231;&#227;o-Term-Frequency---Inverse-Document-Frequency-(TF-IDF)">&#182;</a></h2><p>Nesta representação contabilizamos o número de vezes que cada palavra aparece em cada sentença, como segue:</p>
+<h3 id="Representa&#231;&#227;o-Term-Frequency---Inverse-Document-Frequency-(TF-IDF)">Representa&#231;&#227;o Term Frequency - Inverse Document Frequency (TF-IDF)<a class="anchor-link" href="#Representa&#231;&#227;o-Term-Frequency---Inverse-Document-Frequency-(TF-IDF)">&#182;</a></h3><p>Nesta representação contabilizamos o número de vezes que cada palavra aparece em cada sentença, como segue:</p>
 <table>
 <thead><tr>
 <th>Sentença</th>
@@ -15478,7 +15760,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
@@ -15491,7 +15773,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[216]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tfidfVectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">norm</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -15505,7 +15787,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[217]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tfidf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">data_vectorized</span><span class="o">.</span><span class="n">todense</span><span class="p">(),</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">tfidfVectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">())</span>
@@ -15522,7 +15804,7 @@ $$<ul>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[217]:</div>
+    <div class="prompt output_prompt">Out[66]:</div>
 
 
 
@@ -15711,7 +15993,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[246]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tfidfVectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">norm</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -15725,7 +16007,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[248]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tfidf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">data_vectorized</span><span class="o">.</span><span class="n">todense</span><span class="p">(),</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">tfidfVectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">())</span>
@@ -15742,7 +16024,7 @@ $$<ul>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[248]:</div>
+    <div class="prompt output_prompt">Out[68]:</div>
 
 
 
@@ -15931,7 +16213,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[294]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">Review</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
@@ -15947,7 +16229,7 @@ $$<ul>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[294]:</div>
+    <div class="prompt output_prompt">Out[69]:</div>
 
 
 
@@ -15964,7 +16246,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[289]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tfidf</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">7</span><span class="p">],</span><span class="n">df_tfidf</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span><span class="o">.</span><span class="n">nonzero</span><span class="p">()[</span><span class="mi">0</span><span class="p">]]</span>
@@ -15980,7 +16262,7 @@ $$<ul>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[289]:</div>
+    <div class="prompt output_prompt">Out[70]:</div>
 
 
 
@@ -16073,7 +16355,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[302]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_vectorized</span> <span class="o">=</span> <span class="n">countVectorizer_pre</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span>
@@ -16092,7 +16374,7 @@ $$<ul>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[302]:</div>
+    <div class="prompt output_prompt">Out[71]:</div>
 
 
 
@@ -16273,7 +16555,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[303]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tf</span><span class="o">.</span><span class="n">shape</span>
@@ -16289,13 +16571,13 @@ $$<ul>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[303]:</div>
+    <div class="prompt output_prompt">Out[85]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(748, 2482)</pre>
+<pre>(748, 3048)</pre>
 </div>
 
 </div>
@@ -16321,7 +16603,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[306]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">target</span> <span class="o">=</span> <span class="s1">&#39;class_label&#39;</span>
@@ -16344,7 +16626,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[307]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -16366,22 +16648,21 @@ $$<ul>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Hiperparametrizaçao: avaliaremos diferentes parâmetros do algortimo Random Forest e escolheremos a melhor configuração baseado no classificador de melhor qualidade usando 10-fold cross-validation.</p>
+<p>Hiperparametrizaçao: avaliaremos diferentes parâmetros do algortimo Random Forest e escolheremos a melhor configuração baseado no classificador de melhor qualidade usando 5-fold cross-validation.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[308]:</div>
+<div class="prompt input_prompt">In&nbsp;[200]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">random_forest_parameters</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span>        
         <span class="s1">&#39;max_features&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;log2&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span>
-        <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span>
+        <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span>        
         <span class="s1">&#39;criterion&#39;</span><span class="p">:[</span><span class="s1">&#39;gini&#39;</span><span class="p">]</span>    
     <span class="p">}</span>
 <span class="n">cv</span> <span class="o">=</span> <span class="mi">10</span>
@@ -16402,7 +16683,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[309]:</div>
+<div class="prompt input_prompt">In&nbsp;[201]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span>
@@ -16433,7 +16714,7 @@ $$<ul>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[310]:</div>
+<div class="prompt input_prompt">In&nbsp;[202]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">random_forest</span> <span class="o">=</span> <span class="n">random_forest_tuning</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="n">cv</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">random_forest_parameters</span><span class="p">)</span>
@@ -16453,7 +16734,7 @@ $$<ul>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Fitting 10 folds for each of 588 candidates, totalling 5880 fits
+<pre>Fitting 10 folds for each of 147 candidates, totalling 1470 fits
 </pre>
 </div>
 </div>
@@ -16465,19 +16746,13 @@ $$<ul>
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
-[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    3.0s
-[Parallel(n_jobs=-1)]: Done 146 tasks      | elapsed:    6.8s
-[Parallel(n_jobs=-1)]: Done 349 tasks      | elapsed:   12.5s
-[Parallel(n_jobs=-1)]: Done 632 tasks      | elapsed:   20.3s
-[Parallel(n_jobs=-1)]: Done 997 tasks      | elapsed:   30.4s
-[Parallel(n_jobs=-1)]: Done 1442 tasks      | elapsed:   45.3s
-[Parallel(n_jobs=-1)]: Done 1969 tasks      | elapsed:  1.0min
-[Parallel(n_jobs=-1)]: Done 2576 tasks      | elapsed:  1.3min
-[Parallel(n_jobs=-1)]: Done 3265 tasks      | elapsed:  1.7min
-[Parallel(n_jobs=-1)]: Done 4034 tasks      | elapsed:  2.0min
-[Parallel(n_jobs=-1)]: Done 4885 tasks      | elapsed:  2.5min
-[Parallel(n_jobs=-1)]: Done 5816 tasks      | elapsed:  3.0min
-[Parallel(n_jobs=-1)]: Done 5880 out of 5880 | elapsed:  3.0min finished
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    9.7s
+[Parallel(n_jobs=-1)]: Done 146 tasks      | elapsed:   32.8s
+[Parallel(n_jobs=-1)]: Done 349 tasks      | elapsed:  1.3min
+[Parallel(n_jobs=-1)]: Done 632 tasks      | elapsed:  2.3min
+[Parallel(n_jobs=-1)]: Done 997 tasks      | elapsed:  3.6min
+[Parallel(n_jobs=-1)]: Done 1442 tasks      | elapsed:  5.2min
+[Parallel(n_jobs=-1)]: Done 1470 out of 1470 | elapsed:  5.4min finished
 </pre>
 </div>
 </div>
@@ -16485,7 +16760,7 @@ $$<ul>
 </div>
 </div>
 
-</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[311]:</div>
@@ -16528,7 +16803,7 @@ Melhor modelo -&gt; parâmetros:  {&#39;criterion&#39;: &#39;gini&#39;, &#39;max
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[312]:</div>
+<div class="prompt input_prompt">In&nbsp;[92]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">models</span> <span class="o">=</span> <span class="p">{</span>   
@@ -16537,6 +16812,31 @@ Melhor modelo -&gt; parâmetros:  {&#39;criterion&#39;: &#39;gini&#39;, &#39;max
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-92-85c773ee3c0b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      1</span> models = {   
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold">     </span><span class="ansi-blue-intense-fg ansi-bold">&#39;random_forest&#39;</span>  <span class="ansi-yellow-intense-fg ansi-bold">:</span> random_forest<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+<span class="ansi-green-fg">      3</span> }
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;random_forest&#39; is not defined</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -16550,14 +16850,14 @@ Melhor modelo -&gt; parâmetros:  {&#39;criterion&#39;: &#39;gini&#39;, &#39;max
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[313]:</div>
+<div class="prompt input_prompt">In&nbsp;[126]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_predict</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">classification_report</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">accuracy_score</span>
 
-<span class="k">def</span> <span class="nf">model_comparison</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">cross_val</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">model_comparison</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">cross_val</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="mi">5</span><span class="p">):</span>
     <span class="n">measures</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">for</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">cross_val</span><span class="p">)</span> <span class="p">:</span>
@@ -16825,16 +17125,563 @@ Melhor modelo -&gt; parâmetros:  {&#39;criterion&#39;: &#39;gini&#39;, &#39;max
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Compara&#231;&#227;o-das-Representa&#231;&#245;es-em-um-Dataset-usando-Classificadores-RandomForest">Compara&#231;&#227;o das Representa&#231;&#245;es em um Dataset usando Classificadores RandomForest<a class="anchor-link" href="#Compara&#231;&#227;o-das-Representa&#231;&#245;es-em-um-Dataset-usando-Classificadores-RandomForest">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Função para Preparação dos Conjuntos de Dados</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[165]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_dataset_from_countVectorizer</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">countVectorizer</span><span class="p">):</span>
+    <span class="n">data_vectorized</span> <span class="o">=</span> <span class="n">countVectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">Review</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">data_vectorized</span><span class="o">.</span><span class="n">todense</span><span class="p">(),</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">countVectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">())</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;class_label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">Label</span>
+    <span class="k">return</span> <span class="n">df</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Parámetros do Random Forest</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>random_forest_parameters = {
+        'n_estimators': list(np.arange(20, 51, 3)),<br>
+        'max_features': ['log2'],
+        'criterion':['gini']<br>
+    }
+cv = 10</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Possíveis configurações para geração do conjunto de dados</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[199]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">representations</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tf&#39;</span><span class="p">,</span><span class="s1">&#39;bin&#39;</span><span class="p">,</span><span class="s1">&#39;tfidf&#39;</span><span class="p">]</span>
+<span class="n">options</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;without&#39;</span><span class="p">],[</span><span class="s1">&#39;preprocessing&#39;</span><span class="p">],[</span><span class="s1">&#39;ngrams&#39;</span><span class="p">],[</span><span class="s1">&#39;preprocessing&#39;</span><span class="p">,</span><span class="s1">&#39;ngrams&#39;</span><span class="p">]]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Algoritmo para avaliar todas as configurações e armazenar o resultado em um dataset</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[191]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">representation</span> <span class="ow">in</span> <span class="n">representations</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">options</span><span class="p">:</span>
+        <span class="n">preprocessor</span> <span class="o">=</span> <span class="n">preprocessar_sentenca</span> <span class="k">if</span> <span class="s1">&#39;preprocessing&#39;</span> <span class="ow">in</span> <span class="n">option</span> <span class="k">else</span> <span class="kc">None</span>
+        <span class="n">ngram_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="k">if</span> <span class="s1">&#39;ngrams&#39;</span> <span class="ow">in</span> <span class="n">option</span> <span class="k">else</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">representation</span> <span class="o">==</span> <span class="s1">&#39;tf&#39;</span> <span class="p">:</span>
+                <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">preprocessor</span><span class="o">=</span><span class="n">preprocessor</span><span class="p">,</span> <span class="n">ngram_range</span><span class="o">=</span><span class="n">ngram_range</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">representation</span> <span class="o">==</span> <span class="s1">&#39;bin&#39;</span> <span class="p">:</span>
+                <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">preprocessor</span><span class="o">=</span><span class="n">preprocessor</span><span class="p">,</span> <span class="n">ngram_range</span><span class="o">=</span><span class="n">ngram_range</span><span class="p">,</span> <span class="n">binary</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">representation</span> <span class="o">==</span> <span class="s1">&#39;tfidf&#39;</span> <span class="p">:</span>
+                <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">preprocessor</span><span class="o">=</span><span class="n">preprocessor</span><span class="p">,</span> <span class="n">ngram_range</span><span class="o">=</span><span class="n">ngram_range</span><span class="p">)</span>            
+        <span class="n">df</span> <span class="o">=</span> <span class="n">create_dataset_from_countVectorizer</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">vectorizer</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
+        <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">random_forest</span> <span class="o">=</span> <span class="n">random_forest_tuning</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="n">cv</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">random_forest_parameters</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">model_comparison</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;random_forest&#39;</span> <span class="p">:</span> <span class="n">random_forest</span><span class="p">}</span> <span class="p">,</span> <span class="n">cross_val</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="n">cv</span><span class="p">)</span>               
+        <span class="n">result</span><span class="p">[</span><span class="s1">&#39;representation&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">representation</span>
+        <span class="n">result</span><span class="p">[</span><span class="s1">&#39;options&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">option</span><span class="p">)</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">results</span><span class="p">,</span> <span class="n">result</span><span class="p">])</span>        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 3048)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    0.9s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:    4.7s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 2482)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  34 tasks      | elapsed:    1.2s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:    4.4s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 24446)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    3.7s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:   18.0s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 15946)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    2.7s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:   13.3s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 3048)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    0.9s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:    4.9s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 2482)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    0.8s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:    4.5s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 24446)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    3.8s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:   18.0s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 15946)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    2.7s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:   13.8s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 3048)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    1.1s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:    6.6s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 2482)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    1.1s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:    6.5s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 24446)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    5.3s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:   26.6s finished
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(748, 15946)
+Fitting 10 folds for each of 11 candidates, totalling 110 fits
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  25 tasks      | elapsed:    4.2s
+[Parallel(n_jobs=-1)]: Done 110 out of 110 | elapsed:   22.9s finished
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Resultados">Resultados<a class="anchor-link" href="#Resultados">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[198]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span><span class="p">[[</span><span class="s1">&#39;representation&#39;</span><span class="p">,</span><span class="s1">&#39;options&#39;</span><span class="p">,</span><span class="s1">&#39;acuracia&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[198]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>representation</th>
+      <th>options</th>
+      <th>acuracia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>tf</td>
+      <td>without</td>
+      <td>0.762906</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>tf</td>
+      <td>preprocessing</td>
+      <td>0.778203</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>tf</td>
+      <td>ngrams</td>
+      <td>0.715105</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>tf</td>
+      <td>preprocessing_ngrams</td>
+      <td>0.715105</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>bin</td>
+      <td>without</td>
+      <td>0.745698</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>bin</td>
+      <td>preprocessing</td>
+      <td>0.776291</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>bin</td>
+      <td>ngrams</td>
+      <td>0.724665</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>bin</td>
+      <td>preprocessing_ngrams</td>
+      <td>0.722753</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>tfidf</td>
+      <td>without</td>
+      <td>0.747610</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>tfidf</td>
+      <td>preprocessing</td>
+      <td>0.795411</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>tfidf</td>
+      <td>ngrams</td>
+      <td>0.703633</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>tfidf</td>
+      <td>preprocessing_ngrams</td>
+      <td>0.736138</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
