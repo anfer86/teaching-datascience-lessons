@@ -14897,7 +14897,7 @@ last  5 losses:  [1.701 1.838 1.673 1.697 1.762]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Network_Multiclass_3</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
@@ -14913,10 +14913,9 @@ last  5 losses:  [1.701 1.838 1.673 1.697 1.762]
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="c1"># O input passa pela primeira camada</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
-        <span class="c1"># O input passa pela segunda camada        </span>
+        <span class="c1"># A saída da primeira passa pela segunda camada        </span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
-        <span class="c1"># O input passa pela terceira camada        </span>
-        <span class="n">z</span>
+        <span class="c1"># A saída da segunda passa pela terceira camada        </span>
         <span class="k">return</span> <span class="n">x</span>
 </pre></div>
 
@@ -15351,9 +15350,9 @@ last  5 losses:  [1.701 1.838 1.673 1.697 1.762]
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="c1"># O input passa pela primeira camada</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
-        <span class="c1"># O input passa pela segunda camada</span>
+        <span class="c1"># A saída da primeira passa pela segunda camada</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
-        <span class="c1"># O input passa pela terceira camada</span>
+        <span class="c1"># A saída da segunda passa pela terceira camada</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
         <span class="k">return</span> <span class="n">x</span>
 </pre></div>
@@ -15571,7 +15570,7 @@ last  5 losses:  [1.701 1.838 1.673 1.697 1.762]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Network_Multiclass_5</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
@@ -15587,9 +15586,9 @@ last  5 losses:  [1.701 1.838 1.673 1.697 1.762]
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="c1"># O input passa pela primeira camada</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
-        <span class="c1"># O input passa pela segunda camada</span>
+        <span class="c1"># A saída da primeira passa pela segunda camada</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
-        <span class="c1"># O input passa pela terceira camada  </span>
+        <span class="c1"># A saída da segunda passa pela terceira camada  </span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
         <span class="k">return</span> <span class="n">x</span>
 </pre></div>
