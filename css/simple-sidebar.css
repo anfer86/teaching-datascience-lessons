@@ -18,13 +18,13 @@ body {
 
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   width: 15rem;
   font-weight: bold;
 }
 
 #sidebar-wrapper {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 #sidebar-wrapper .list-group {
